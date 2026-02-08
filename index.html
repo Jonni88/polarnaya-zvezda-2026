@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Республиканский конкурс Полярная звезда-2026. Творческие номинации для детей и молодёжи.">
-    <title>Полярная звезда-2026 — Республиканский конкурс</title>
+    <meta name="description" content="XXIX ежегодный Республиканский телевизионный конкурс Полярная звезда-2026. 27-28 февраля, г. Олёкминск.">
+    <title>Полярная звезда-2026 — XXIX Республиканский конкурс</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -21,15 +21,8 @@
             --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -39,7 +32,6 @@
             overflow-x: hidden;
         }
 
-        /* Navigation */
         .nav {
             position: fixed;
             top: 0;
@@ -69,9 +61,7 @@
             text-decoration: none;
         }
 
-        .nav-logo span {
-            color: var(--accent);
-        }
+        .nav-logo span { color: var(--accent); }
 
         .nav-menu {
             display: flex;
@@ -88,9 +78,7 @@
             position: relative;
         }
 
-        .nav-menu a:hover {
-            color: var(--accent);
-        }
+        .nav-menu a:hover { color: var(--accent); }
 
         .nav-menu a::after {
             content: '';
@@ -103,9 +91,7 @@
             transition: width 0.3s;
         }
 
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
+        .nav-menu a:hover::after { width: 100%; }
 
         .nav-toggle {
             display: none;
@@ -116,7 +102,6 @@
             color: var(--primary);
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -142,7 +127,7 @@
         .hero-content {
             text-align: center;
             color: var(--white);
-            max-width: 800px;
+            max-width: 900px;
             position: relative;
             z-index: 1;
         }
@@ -151,27 +136,30 @@
             display: inline-block;
             background: var(--accent);
             color: var(--primary);
-            padding: 8px 20px;
+            padding: 10px 25px;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             margin-bottom: 30px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .hero h1 {
-            font-size: clamp(2rem, 5vw, 4rem);
+            font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.2;
         }
 
         .hero-subtitle {
-            font-size: clamp(1rem, 2vw, 1.3rem);
+            font-size: clamp(1rem, 2vw, 1.2rem);
             opacity: 0.9;
-            margin-bottom: 40px;
-            font-weight: 300;
+            margin-bottom: 30px;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero-date {
@@ -183,6 +171,7 @@
             border-radius: 50px;
             font-size: 1.1rem;
             margin-bottom: 40px;
+            font-weight: 600;
         }
 
         .hero-buttons {
@@ -228,14 +217,11 @@
             border-color: var(--white);
         }
 
-        /* Section Styles */
-        .section {
-            padding: 100px 20px;
-        }
+        .section { padding: 100px 20px; }
 
         .section-header {
             text-align: center;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto 60px;
         }
 
@@ -259,18 +245,17 @@
             font-size: 1.1rem;
         }
 
-        /* About Section */
         .about-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
         .about-card {
             background: var(--white);
-            padding: 40px;
+            padding: 35px;
             border-radius: 20px;
             box-shadow: var(--shadow);
             transition: transform 0.3s, box-shadow 0.3s;
@@ -290,39 +275,34 @@
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .about-card h3 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--primary);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .about-card p {
             color: var(--text-light);
             line-height: 1.7;
+            font-size: 0.95rem;
         }
 
-        /* Nominations Section */
         .nominations {
             background: var(--primary);
             color: var(--white);
         }
 
-        .nominations .section-label {
-            color: var(--accent);
-        }
-
-        .nominations h2 {
-            color: var(--white);
-        }
+        .nominations .section-label { color: var(--accent); }
+        .nominations h2 { color: var(--white); }
 
         .nominations-grid {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
 
@@ -331,39 +311,63 @@
             border: 1px solid rgba(255,255,255,0.1);
             border-radius: 20px;
             padding: 35px;
-            transition: all 0.3s;
-        }
-
-        .nomination-card:hover {
-            background: rgba(255,255,255,0.1);
-            transform: translateY(-5px);
-        }
-
-        .nomination-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--accent);
-            opacity: 0.5;
-            line-height: 1;
-            margin-bottom: 15px;
         }
 
         .nomination-card h3 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .program-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+        }
+
+        .program-block:last-child { margin-bottom: 0; }
+
+        .program-block h4 {
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .program-block p {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        .program-block ul {
+            margin-left: 20px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .program-block li { margin-bottom: 5px; }
+
+        .gala-highlight {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(214,158,46,0.3), rgba(236,201,75,0.2));
+            border-radius: 15px;
+            border: 2px solid var(--accent);
+            text-align: center;
+        }
+
+        .gala-highlight p:first-child {
             font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
         }
 
-        .nomination-card p {
-            opacity: 0.8;
-            font-size: 0.95rem;
-        }
-
-        /* News Section */
-        .news-grid {
+        .news-grid, .gallery-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
@@ -375,12 +379,10 @@
             transition: transform 0.3s;
         }
 
-        .news-card:hover {
-            transform: translateY(-5px);
-        }
+        .news-card:hover { transform: translateY(-5px); }
 
         .news-image {
-            height: 200px;
+            height: 180px;
             background: linear-gradient(135deg, var(--primary), var(--primary-light));
             display: flex;
             align-items: center;
@@ -388,9 +390,7 @@
             font-size: 3rem;
         }
 
-        .news-content {
-            padding: 30px;
-        }
+        .news-content { padding: 25px; }
 
         .news-date {
             color: var(--accent);
@@ -401,8 +401,8 @@
 
         .news-card h3 {
             color: var(--primary);
-            font-size: 1.2rem;
-            margin-bottom: 15px;
+            font-size: 1.15rem;
+            margin-bottom: 12px;
             line-height: 1.4;
         }
 
@@ -412,18 +412,7 @@
             line-height: 1.6;
         }
 
-        /* Gallery Section */
-        .gallery {
-            background: var(--bg);
-        }
-
-        .gallery-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+        .gallery { background: var(--bg); }
 
         .gallery-item {
             position: relative;
@@ -435,13 +424,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
+            font-size: 3.5rem;
             transition: transform 0.3s;
         }
 
-        .gallery-item:hover {
-            transform: scale(1.02);
-        }
+        .gallery-item:hover { transform: scale(1.02); }
 
         .gallery-overlay {
             position: absolute;
@@ -463,23 +450,47 @@
             opacity: 0.8;
         }
 
-        /* Registration Form */
         .registration {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: var(--white);
         }
 
-        .registration h2 {
-            color: var(--white);
-        }
+        .registration h2 { color: var(--white); }
 
         .form-container {
             max-width: 700px;
             margin: 0 auto;
             background: rgba(255,255,255,0.05);
             border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 30px;
-            padding: 50px;
+            border-radius: 25px;
+            padding: 40px;
+        }
+
+        .contact-info-box {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            background: rgba(214,158,46,0.15);
+            border: 2px solid var(--accent);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contact-info-box h3 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-info-box a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
         }
 
         .form-row {
@@ -489,9 +500,7 @@
             margin-bottom: 20px;
         }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+        .form-group { margin-bottom: 20px; }
 
         .form-group label {
             display: block;
@@ -504,7 +513,7 @@
         .form-group select,
         .form-group textarea {
             width: 100%;
-            padding: 15px 20px;
+            padding: 14px 18px;
             border: 1px solid rgba(255,255,255,0.2);
             border-radius: 12px;
             background: rgba(255,255,255,0.1);
@@ -515,9 +524,7 @@
         }
 
         .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255,255,255,0.5);
-        }
+        .form-group textarea::placeholder { color: rgba(255,255,255,0.5); }
 
         .form-group input:focus,
         .form-group select:focus,
@@ -529,7 +536,7 @@
 
         .form-group textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 100px;
         }
 
         .form-group select option {
@@ -544,10 +551,9 @@
 
         .form-submit .btn-primary {
             font-size: 1.1rem;
-            padding: 18px 50px;
+            padding: 16px 45px;
         }
 
-        /* Contacts Section */
         .contacts-grid {
             max-width: 1000px;
             margin: 0 auto;
@@ -556,9 +562,7 @@
             gap: 40px;
         }
 
-        .contact-item {
-            text-align: center;
-        }
+        .contact-item { text-align: center; }
 
         .contact-icon {
             width: 70px;
@@ -577,17 +581,13 @@
             margin-bottom: 10px;
         }
 
-        .contact-item p {
-            color: var(--text-light);
-        }
-
+        .contact-item p { color: var(--text-light); }
         .contact-item a {
             color: var(--accent);
             text-decoration: none;
             font-weight: 600;
         }
 
-        /* Footer */
         .footer {
             background: var(--primary);
             color: var(--white);
@@ -601,16 +601,13 @@
             margin-bottom: 20px;
         }
 
-        .footer-logo span {
-            color: var(--accent);
-        }
+        .footer-logo span { color: var(--accent); }
 
         .footer p {
             opacity: 0.7;
             font-size: 0.9rem;
         }
 
-        /* Modal */
         .modal {
             display: none;
             position: fixed;
@@ -625,14 +622,12 @@
             padding: 20px;
         }
 
-        .modal.active {
-            display: flex;
-        }
+        .modal.active { display: flex; }
 
         .modal-content {
             background: var(--white);
             border-radius: 20px;
-            max-width: 900px;
+            max-width: 800px;
             max-height: 90vh;
             overflow: auto;
             position: relative;
@@ -650,7 +645,6 @@
             z-index: 10;
         }
 
-        /* Mobile Menu */
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -662,7 +656,7 @@
                 padding: 30px;
                 gap: 20px;
                 box-shadow: var(--shadow-lg);
-                transform: translateY(-100%);
+                transform: translateY(-150%);
                 opacity: 0;
                 visibility: hidden;
                 transition: all 0.3s;
@@ -674,71 +668,25 @@
                 visibility: visible;
             }
 
-            .nav-toggle {
-                display: block;
-            }
-
-            .hero {
-                padding: 120px 20px 60px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .section {
-                padding: 60px 20px;
-            }
-
-            .form-container {
-                padding: 30px 20px;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .news-grid,
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
+            .nav-toggle { display: block; }
+            .hero { padding: 120px 20px 60px; }
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .hero-buttons .btn { width: 100%; justify-content: center; }
+            .section { padding: 60px 20px; }
+            .form-container { padding: 25px 20px; }
+            .form-row { grid-template-columns: 1fr; }
+            .news-grid, .gallery-grid { grid-template-columns: 1fr; }
+            .nomination-card { padding: 25px 20px; }
         }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        .delay-1 { animation-delay: 0.1s; }
-        .delay-2 { animation-delay: 0.2s; }
-        .delay-3 { animation-delay: 0.3s; }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">⭐ <span>Полярная звезда</span></a>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#about">О конкурсе</a></li>
-                <li><a href="#nominations">Номинации</a></li>
+                <li><a href="#nominations">Программа</a></li>
                 <li><a href="#news">Новости</a></li>
                 <li><a href="#gallery">Галерея</a></li>
                 <li><a href="#registration">Регистрация</a></li>
@@ -748,116 +696,124 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">Республиканский конкурс</div>
+            <div class="hero-badge">XXIX ежегодный Республиканский телевизионный конкурс</div>
             <h1>Полярная звезда — 2026</h1>
-            <p class="hero-subtitle">Открытый республиканский конкурс для детей, юношества и молодёжи</p>
-            <div class="hero-date">📅 15 марта — 20 апреля 2026</div>
+            <p class="hero-subtitle">Посвящённый Году Единства народов России и Году Культуры в Республике (Саха) Якутия в Олёкминском районе</p>
+            <div class="hero-date">📅 27 — 28 февраля 2026 | г. Олёкминск</div>
             <div class="hero-buttons">
                 <a href="#registration" class="btn btn-primary">Подать заявку</a>
-                <a href="#about" class="btn btn-outline">Подробнее</a>
+                <a href="#nominations" class="btn btn-outline">Программа</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="section" id="about">
         <div class="section-header">
             <div class="section-label">О конкурсе</div>
-            <h2>Почему стоит участвовать</h2>
-            <p class="section-subtitle">Конкурс создан для поддержки и развития творческих способностей молодого поколения</p>
+            <h2>XXIX Республиканский телевизионный конкурс</h2>
+            <p class="section-subtitle">Посвящённый Году Единства народов России и Году Культуры в Республике (Саха) Якутия</p>
         </div>
+        
         <div class="about-grid">
             <div class="about-card">
-                <div class="about-icon">🏆</div>
-                <h3>Признание таланта</h3>
-                <p>Получите оценку профессионального жюри и возможность заявить о себе на республиканском уровне</p>
+                <div class="about-icon">📅</div>
+                <h3>Даты проведения</h3>
+                <p>27 и 28 февраля 2026 года. Два дня творческих состязаний и гала-концерта.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-icon">📍</div>
+                <h3>Место проведения</h3>
+                <p>г. Олёкминск, МБУ НКЦ «Гармония» и МБОУ ДО «ОДШИ». Центральные площадки города.</p>
             </div>
             <div class="about-card">
                 <div class="about-icon">🎭</div>
-                <h3>Разнообразие номинаций</h3>
-                <p>Выберите направление по душе: от вокала и хореографии до изобразительного искусства и театра</p>
+                <h3>Номинации</h3>
+                <p>Игра на инструментах, олонхо, фольклор, ИЗО, ДПИ. Конкурс для коллективов города и отдалённых наслегов.</p>
             </div>
             <div class="about-card">
-                <div class="about-icon">🤝</div>
-                <h3>Новые знакомства</h3>
-                <p>Встретьтесь с единомышленниками, найдите друзей и будущих коллег по творческому цеху</p>
-            </div>
-            <div class="about-card">
-                <div class="about-icon">📈</div>
-                <h3>Развитие карьеры</h3>
-                <p>Лауреаты конкурса получают рекомендации для поступления в творческие вузы и приглашения на фестивали</p>
+                <div class="about-icon">🎪</div>
+                <h3>Гала-концерт</h3>
+                <p>28 февраля в 17:00. Вход: 300 рублей. Торжественное закрытие конкурса.</p>
             </div>
         </div>
     </section>
 
-    <!-- Nominations Section -->
     <section class="section nominations" id="nominations">
         <div class="section-header">
-            <div class="section-label">Номинации</div>
-            <h2>Творческие направления</h2>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.8)">Выберите категорию, в которой хотите проявить себя</p>
+            <div class="section-label">Номинации и программа</div>
+            <h2>27 — 28 февраля 2026 года</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8)">Программа XXIX Республиканского телевизионного конкурса</p>
         </div>
+        
         <div class="nominations-grid">
             <div class="nomination-card">
-                <div class="nomination-number">01</div>
-                <h3>Вокальное искусство</h3>
-                <p>Эстрадный, народный, академический вокал. Соло и ансамбли.</p>
+                <h3>📅 27 февраля 2026 года (пятница)</h3>
+                
+                <div class="program-block">
+                    <h4>📍 МБОУ ДО «ОДШИ»</h4>
+                    <p><strong>9:00</strong> — Регистрация участников</p>
+                    <p><strong>10:00</strong> — Конкурс, смотр номинаций:</p>
+                    <ul>
+                        <li>Игра на инструментах</li>
+                        <li>Олонхо</li>
+                        <li>Фольклор</li>
+                        <li>ИЗО (изобразительное искусство)</li>
+                        <li>ДПИ (декоративно-прикладное искусство)</li>
+                    </ul>
+                </div>
+                
+                <div class="program-block">
+                    <h4>📍 МБУ НКЦ «Гармония»</h4>
+                    <p><strong>15:00</strong> — Регистрация участников</p>
+                    <p><strong>16:00</strong> — Конкурс, участвуют коллективы города</p>
+                </div>
             </div>
+            
             <div class="nomination-card">
-                <div class="nomination-number">02</div>
-                <h3>Хореография</h3>
-                <p>Современные и народные танцы. Бальная и эстрадная хореография.</p>
-            </div>
-            <div class="nomination-card">
-                <div class="nomination-number">03</div>
-                <h3>Инструментальная музыка</h3>
-                <p>Исполнение на народных, классических и эстрадных инструментах.</p>
-            </div>
-            <div class="nomination-card">
-                <div class="nomination-number">04</div>
-                <h3>Театральное искусство</h3>
-                <p>Актёрское мастерство, сценические миниатюры, художественное слово.</p>
-            </div>
-            <div class="nomination-card">
-                <div class="nomination-number">05</div>
-                <h3>Изобразительное искусство</h3>
-                <p>Живопись, графика, декоративно-прикладное творчество.</p>
-            </div>
-            <div class="nomination-card">
-                <div class="nomination-number">06</div>
-                <h3>Фотография</h3>
-                <p>Художественная, репортажная, портретная фотография.</p>
+                <h3>📅 28 февраля 2026 года (суббота)</h3>
+                
+                <div class="program-block">
+                    <h4>📍 МБУ НКЦ «Гармония»</h4>
+                    <p><strong>9:00</strong> — Регистрация участников</p>
+                    <p><strong>10:00</strong> — Конкурс, участвуют коллективы отдалённых наслегов</p>
+                    
+                    <div class="gala-highlight">
+                        <p>🎪 17:00 — ГАЛА-КОНЦЕРТ</p>
+                        <p>Вход: 300 рублей</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- News Section -->
     <section class="section" id="news">
         <div class="section-header">
             <div class="section-label">Новости</div>
             <h2>Последние события</h2>
             <p class="section-subtitle">Следите за обновлениями конкурса</p>
         </div>
+        
         <div class="news-grid">
             <article class="news-card">
                 <div class="news-image">📢</div>
                 <div class="news-content">
                     <div class="news-date">5 февраля 2026</div>
                     <h3>Старт приёма заявок</h3>
-                    <p>Открыта регистрация участников на республиканский конкурс «Полярная звезда — 2026». Успейте подать заявку!</p>
+                    <p>Открыта регистрация участников на XXIX Республиканский телевизионный конкурс «Полярная звезда — 2026»!</p>
                 </div>
             </article>
+            
             <article class="news-card">
-                <div class="news-image">👥</div>
+                <div class="news-image">🎭</div>
                 <div class="news-content">
                     <div class="news-date">1 февраля 2026</div>
-                    <h3>Состав жюри утверждён</h3>
-                    <p>В жюри конкурса вошли ведущие деятели культуры и искусства республики. Полный список на сайте.</p>
+                    <h3>Утверждена программа</h3>
+                    <p>Опубликована подробная программа проведения конкурса 27-28 февраля в г. Олёкминск.</p>
                 </div>
             </article>
+            
             <article class="news-card">
                 <div class="news-image">📋</div>
                 <div class="news-content">
@@ -869,13 +825,13 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section class="section gallery" id="gallery">
         <div class="section-header">
             <div class="section-label">Галерея</div>
             <h2>Моменты прошлых лет</h2>
             <p class="section-subtitle">Яркие моменты конкурса «Полярная звезда»</p>
         </div>
+        
         <div class="gallery-grid">
             <div class="gallery-item" onclick="openModal(0)">
                 🎤
@@ -922,13 +878,19 @@
         </div>
     </section>
 
-    <!-- Registration Section -->
     <section class="section registration" id="registration">
         <div class="section-header">
             <div class="section-label">Регистрация</div>
             <h2>Подать заявку</h2>
             <p class="section-subtitle" style="color: rgba(255,255,255,0.8)">Заполните форму для участия в конкурсе</p>
         </div>
+        
+        <div class="contact-info-box">
+            <h3>📞 Приём заявок на участие</h3>
+            <p>Telegram: <a href="https://t.me/+79644244164" target="_blank">+7 (964) 424-41-64</a> (Макс)<br>
+            Белоусова Анна Валерьевна</p>
+        </div>
+        
         <div class="form-container">
             <form id="registrationForm">
                 <div class="form-row">
@@ -947,6 +909,7 @@
                         <label for="birthDate">Дата рождения *</label>
                         <input type="date" id="birthDate" name="birthDate" required>
                     </div>
+                    
                     <div class="form-group">
                         <label for="category">Возрастная категория *</label>
                         <select id="category" name="category" required>
@@ -964,14 +927,14 @@
                         <label for="nomination">Номинация *</label>
                         <select id="nomination" name="nomination" required>
                             <option value="">Выберите номинацию</option>
-                            <option value="vocal">Вокальное искусство</option>
-                            <option value="dance">Хореография</option>
-                            <option value="instrumental">Инструментальная музыка</option>
-                            <option value="theater">Театральное искусство</option>
-                            <option value="art">Изобразительное искусство</option>
-                            <option value="photo">Фотография</option>
+                            <option value="instruments">Игра на инструментах</option>
+                            <option value="olonkho">Олонхо</option>
+                            <option value="folklore">Фольклор</option>
+                            <option value="izo">ИЗО (изобразительное искусство)</option>
+                            <option value="dpi">ДПИ (декоративно-прикладное искусство)</option>
                         </select>
                     </div>
+                    
                     <div class="form-group">
                         <label for="city">Населённый пункт *</label>
                         <input type="text" id="city" name="city" required placeholder="Олёкминск">
@@ -983,6 +946,7 @@
                         <label for="phone">Телефон *</label>
                         <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
                     </div>
+                    
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="example@mail.ru">
@@ -990,8 +954,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="educational">Учебное заведение / Коллектив</label>
-                    <input type="text" id="educational" name="educational" placeholder="ДШИ им. Рахманинова">
+                    <label for="educational">Учебное заведение / Коллектив *</label>
+                    <input type="text" id="educational" name="educational" required placeholder="МБУ НКЦ «Гармония»">
                 </div>
 
                 <div class="form-group">
@@ -1011,49 +975,47 @@
         </div>
     </section>
 
-    <!-- Contacts Section -->
     <section class="section" id="contacts">
         <div class="section-header">
             <div class="section-label">Контакты</div>
             <h2>Свяжитесь с нами</h2>
             <p class="section-subtitle">Организационный комитет конкурса</p>
         </div>
+        
         <div class="contacts-grid">
             <div class="contact-item">
                 <div class="contact-icon">📍</div>
                 <h3>Адрес</h3>
-                <p>г. Якутск, ул. Ленина, 15<br>Республиканский центр культуры</p>
+                <p>Республика (Саха) Якутия<br>г. Олёкминск<br>МБУ НКЦ «Гармония»</p>
             </div>
+            
             <div class="contact-item">
                 <div class="contact-icon">📞</div>
-                <h3>Телефон</h3>
-                <p><a href="tel:+74112555555">+7 (4112) 55-55-55</a><br>Пн-Пт, 9:00-18:00</p>
+                <h3>Приём заявок</h3>
+                <p>Telegram: <a href="https://t.me/+79644244164" target="_blank">+7 (964) 424-41-64</a><br>(Макс)</p>
             </div>
+            
             <div class="contact-item">
-                <div class="contact-icon">✉️</div>
-                <h3>Email</h3>
-                <p><a href="mailto:polarnayazvezda@mail.ru">polarnayazvezda@mail.ru</a></p>
+                <div class="contact-icon">👤</div>
+                <h3>Координатор</h3>
+                <p>Белоусова Анна Валерьевна</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-logo">⭐ <span>Полярная звезда</span> — 2026</div>
-        <p>Республиканский конкурс для детей, юношества и молодёжи<br>© 2026 Все права защищены</p>
+        <p>XXIX ежегодный Республиканский телевизионный конкурс<br>© 2026 Все права защищены</p>
     </footer>
 
-    <!-- Modal -->
     <div class="modal" id="galleryModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
-            <div id="modalBody" style="padding: 40px; text-align: center; min-height: 300px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
-            </div>
+            <div id="modalBody" style="padding: 40px; text-align: center; min-height: 300px; display: flex; align-items: center; justify-content: center; font-size: 4rem;"></div>
         </div>
     </div>
 
     <script>
-        // Mobile Menu Toggle
         const navToggle = document.getElementById('navToggle');
         const navMenu = document.getElementById('navMenu');
 
@@ -1061,37 +1023,26 @@
             navMenu.classList.toggle('active');
         });
 
-        // Close menu on link click
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
             });
         });
 
-        // Form Submission
         document.getElementById('registrationForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Collect form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
-            // Here you would typically send to server
             console.log('Form submitted:', data);
-            
-            // Show success message
             alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
             this.reset();
         });
 
-        // Phone mask
         const phoneInput = document.getElementById('phone');
         phoneInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             if (value.length > 0) {
-                if (value[0] === '7' || value[0] === '8') {
-                    value = value.substring(1);
-                }
+                if (value[0] === '7' || value[0] === '8') value = value.substring(1);
                 let formatted = '+7';
                 if (value.length > 0) formatted += ' (' + value.substring(0, 3);
                 if (value.length >= 3) formatted += ') ' + value.substring(3, 6);
@@ -1101,7 +1052,6 @@
             }
         });
 
-        // Gallery Modal
         const galleryItems = [
             { icon: '🎤', title: 'Вокальный конкурс', desc: 'Финал 2025 года' },
             { icon: '💃', title: 'Хореография', desc: 'Современный танец' },
@@ -1118,9 +1068,9 @@
             
             modalBody.innerHTML = `
                 <div>
-                    <div style="font-size: 6rem; margin-bottom: 20px;">${item.icon}</div>
-                    <h3 style="color: var(--primary); margin-bottom: 10px;">${item.title}</h3>
-                    <p style="color: var(--text-light);">${item.desc}</p>
+                    <div style="font-size: 5rem; margin-bottom: 20px;">${item.icon}</div>
+                    <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.5rem;">${item.title}</h3>
+                    <p style="color: var(--text-light); font-size: 1.1rem;">${item.desc}</p>
                 </div>
             `;
             
@@ -1134,35 +1084,24 @@
             document.body.style.overflow = '';
         }
 
-        // Close modal on outside click
         document.getElementById('galleryModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModal();
-            }
+            if (e.target === this) closeModal();
         });
 
-        // Close modal on Escape key
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-            }
+            if (e.key === 'Escape') closeModal();
         });
 
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Navbar background on scroll
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
