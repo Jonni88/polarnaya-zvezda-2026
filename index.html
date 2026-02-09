@@ -107,21 +107,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, #2d3748 100%);
+            background: linear-gradient(135deg, rgba(26,54,93,0.8) 0%, rgba(44,82,130,0.8) 50%, rgba(45,55,72,0.8) 100%),
+                        url('https://habrastorage.org/r/w1560/getpro/habr/post_images/309/741/799/309741799f247356b0cd3581890ed3c8.jpg');
+            background-size: cover;
+            background-position: center;
             position: relative;
             padding: 100px 20px 60px;
             overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
         }
 
         .hero-content {
@@ -143,6 +135,7 @@
             margin-bottom: 30px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .hero h1 {
@@ -150,55 +143,32 @@
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
         .hero-subtitle {
             font-size: clamp(1rem, 2vw, 1.2rem);
-            opacity: 0.9;
+            opacity: 0.95;
             margin-bottom: 30px;
             font-weight: 400;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .hero-image {
-            width: 100%;
-            max-width: 500px;
-            height: 300px;
-            margin: 0 auto 30px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-image-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            border: 2px dashed rgba(255,255,255,0.3);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .hero-date {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(0,0,0,0.4);
             padding: 15px 30px;
             border-radius: 50px;
             font-size: 1.1rem;
             margin-bottom: 40px;
             font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
         }
 
         .hero-buttons {
@@ -728,12 +698,6 @@
             <div class="hero-badge">XXIX ежегодный Республиканский телевизионный конкурс</div>
             <h1>Полярная звезда — 2026</h1>
             <p class="hero-subtitle">Посвящённый Году Единства народов России и Году Культуры в Республике (Саха) Якутия в Олёкминском районе</p>
-            
-            <!-- Картинка для шапки -->
-            <div class="hero-image">
-                <img src="https://habrastorage.org/r/w1560/getpro/habr/post_images/309/741/799/309741799f247356b0cd3581890ed3c8.jpg" alt="Полярная звезда 2026">
-            </div>
-            
             <div class="hero-date">📅 27 — 28 февраля 2026 | г. Олёкминск</div>
             <div class="hero-buttons">
                 <a href="#registration" class="btn btn-primary">Подать заявку</a>
