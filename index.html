@@ -162,6 +162,33 @@
             margin-right: auto;
         }
 
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin: 0 auto 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 2px dashed rgba(255,255,255,0.3);
+        }
+
         .hero-date {
             display: inline-flex;
             align-items: center;
@@ -701,6 +728,14 @@
             <div class="hero-badge">XXIX ежегодный Республиканский телевизионный конкурс</div>
             <h1>Полярная звезда — 2026</h1>
             <p class="hero-subtitle">Посвящённый Году Единства народов России и Году Культуры в Республике (Саха) Якутия в Олёкминском районе</p>
+            
+            <!-- Картинка для шапки -->
+            <div class="hero-image">
+                <div class="hero-image-placeholder">🖼️</div>
+                <!-- Замените placeholder на свою картинку: -->
+                <!-- <img src="images/hero.jpg" alt="Полярная звезда 2026"> -->
+            </div>
+            
             <div class="hero-date">📅 27 — 28 февраля 2026 | г. Олёкминск</div>
             <div class="hero-buttons">
                 <a href="#registration" class="btn btn-primary">Подать заявку</a>
